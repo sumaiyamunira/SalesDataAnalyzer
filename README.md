@@ -19,7 +19,7 @@ To harness the potential of big data analytics, follow the steps below:
 
 1. **Create Directory in HDFS:**
     ```bash
-      $HADOOP_HOME/bin/hadoop fs -mkdir sales_data
+    $HADOOP_HOME/bin/hadoop fs -mkdir sales_data
     $HADOOP_HOME/bin/hadoop fs -mkdir sales_output
 
 3. **Upload a File Containing Sales Data in HDFS:**
@@ -36,7 +36,8 @@ To harness the potential of big data analytics, follow the steps below:
       javac -cp $HADOOP_CLASSPATH SalesDataAnalyzer.java jar SalesDataAnalyzer.jar SalesDataAnalyzer*.class
 
 6. **Run MapReduce Job:**
-$HADOOP_HOME/bin/hadoop jar SalesDataAnalyzer.jar SalesDataAnalyzer sales_data/sales.txt sales_output
+    ```bash
+    $HADOOP_HOME/bin/hadoop jar SalesDataAnalyzer.jar SalesDataAnalyzer sales_data/sales.txt sales_output
 
 
 ## Output
@@ -115,12 +116,3 @@ The SalesDataAnalyzer.java file contains the source code for the Hadoop MapReduc
            }
        }
    }
-   
-   
-   
-   
-   
-   
-   
-   
-   
